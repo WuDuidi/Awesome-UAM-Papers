@@ -4,7 +4,7 @@
 
 A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UAV + body-mounted robot arm), with a special focus on **cooperative multi-UAM systems**: multi-robot transport, dual-arm aerial manipulation, fully-actuated platforms, contact/tool interaction, aerial construction, and learning-based methods & benchmarks.
 
-🔖 Last updated: Nov 2026 · 66 papers · Contributions welcome via PR!
+🔖 Last updated: Nov 2026 · 74 unique papers (91 entries incl. cross-lists) · Contributions welcome via PR!
 
 ---
 
@@ -18,6 +18,10 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [🏗️ Aerial Construction & Heterogeneous Teams](#construction)
 - [🔧 Contact Inspection, Tool Use & Force Interaction](#contact)
 - [🧠 Learning-Based Methods, Simulators & Benchmarks](#learning)
+- [🏅 Nature & Science Family (UAV/UAM)](#nature-science)
+- [📖 IEEE T-RO (UAV/UAM)](#tro)
+- [🐦 Bio-Inspired UAM](#bio-inspired)
+- [🦋 Morphing & Reconfigurable UAV/UAM](#morphing)
 
 ---
 
@@ -110,6 +114,53 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2023] ⭐ **Champion-Level Drone Racing Using Deep Reinforcement Learning (Swift)** · *Nature* [paper](https://www.nature.com/articles/s41586-023-06419-9) (University of Zurich)
 - [2023] **A Deep Multi-Agent Reinforcement Learning Framework for Autonomous Aerial Navigation to Grasping Points on Loads** · *Robotics and Autonomous Systems* [paper](https://www.sciencedirect.com/science/article/pii/S0921889023001288) [pdf](https://eprints.whiterose.ac.uk/id/eprint/232609/1/1-s2.0-S0921889023001288-main.pdf) (Coventry University)
 - [2020] **Flightmare: A Flexible Quadrotor Simulator** · *CoRL* [paper](https://arxiv.org/abs/2009.00563) [pdf](https://arxiv.org/pdf/2009.00563) [code](https://github.com/uzh-rpg/flightmare) (University of Zurich)
+
+---
+
+## <a id="nature-science"></a>🏅 Nature & Science Family (UAV/UAM)
+
+*Cross-listed view: aerial-robot papers in Nature, Science, Science Robotics and Nature Machine Intelligence.*
+
+- [2025] ⭐ **Proximal Cooperative Aerial Manipulation with Vertically Stacked Drones** · *Nature* [paper](https://www.nature.com/articles/s41586-025-09575-x) [pdf](https://ndownloader.figshare.com/files/58224982) (Westlake University, Lancaster University)
+- [2025] **Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.adu8015) [pdf](https://arxiv.org/pdf/2501.18802) (TU Delft, Sapienza University of Rome, University of Twente)
+- [2025] **Learning Vision-Based Agile Flight via Differentiable Physics** · *Nature Machine Intelligence* [paper](https://www.nature.com/articles/s42256-025-01048-0) [pdf](https://arxiv.org/pdf/2407.10648) (Shanghai Jiao Tong University)
+- [2023] ⭐ **Champion-Level Drone Racing Using Deep Reinforcement Learning (Swift)** · *Nature* [paper](https://www.nature.com/articles/s41586-023-06419-9) (University of Zurich)
+- [2022] ⭐ **Aerial Additive Manufacturing with Multiple Autonomous Robots** · *Nature* [paper](https://www.nature.com/articles/s41586-022-04988-4) (Imperial College London, Empa)
+- [2022] **Swarm of Micro Flying Robots in the Wild** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.abm5954) [pdf](https://zhepeiwang.github.io/pubs/sr_2022_swarm.pdf) [code](https://github.com/ZJU-FAST-Lab/EGO-Planner-v2) (Zhejiang University)
+- [2021] **Learning High-Speed Flight in the Wild** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.abg5810) [pdf](https://rpg.ifi.uzh.ch/docs/Loquercio21_Science.pdf) (University of Zurich)
+- [2021] **Bird-Inspired Dynamic Grasping and Perching in Arboreal Environments (SNAG)** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.abj7562) [pdf](https://lentinklab.com/wp-content/uploads/2023/12/2021-bird-inspired-perching.pdf) (Stanford University)
+- [2021] **Predictive Control of Aerial Swarms in Cluttered Environments** · *Nature Machine Intelligence* [paper](https://www.nature.com/articles/s42256-021-00341-y) (EPFL)
+- [2020] **Soft Biohybrid Morphing Wings with Feathers Underactuated by Wrist and Finger Actuation (PigeonBot)** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.aay1246) [project](https://www.erchang.org/pigeonbot) (Stanford University)
+- [2019] **Untethered Flight of an Insect-Sized Flapping-Wing Microscale Aerial Vehicle (RoboBee X-Wing)** · *Nature* [paper](https://www.nature.com/articles/s41586-019-1322-0) (Harvard University)
+- [2017] **A Biomimetic Robotic Platform to Study Flight Specializations of Bats (Bat Bot B2)** · *Science Robotics* [paper](https://pubmed.ncbi.nlm.nih.gov/33157861) [pdf](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/ScienceRobotics2017.pdf) (Caltech, UIUC)
+
+## <a id="tro"></a>📖 IEEE T-RO (UAV/UAM)
+
+*Cross-listed view: aerial robot papers in IEEE Transactions on Robotics.*
+
+- [2025] **Whole-Body Integrated Motion Planning for Aerial Manipulators (AM-Planner)** · *IEEE T-RO* [paper](https://arxiv.org/abs/2501.06493) [code](https://github.com/SYSU-HILAB/am-planner) (Sun Yat-sen University) — *first whole-body (base + arm) integrated planner for aerial manipulators*
+- [2022] ⭐ **Past, Present, and Future of Aerial Robotic Manipulators** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9462539) [pdf](https://idus.us.es/bitstreams/954638e3-7b65-4817-889e-a476317572a0/download) (University of Seville, CNRS-LAAS, University of Twente, Seoul National University)
+- [2021] ⭐ **Active Interaction Force Control for Contact-Based Inspection with a Fully Actuated Aerial Vehicle** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9295362) [pdf](https://arxiv.org/pdf/2003.09516v3) (ETH Zurich)
+- [2018] **A Novel Robotic Platform for Aerial Manipulation Using Quadrotors as Rotating Thrust Generators** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/8294249) (Seoul National University) — *quadrotors spin around a jointed arm to generate joint torques*
+- [2013] ⭐ **Geometric Control of a Quadrotor with a Cable-Suspended Load** · *IEEE T-RO* [paper](https://doi.org/10.1109/TRO.2013.2271569) [pdf](https://hybrid-robotics.berkeley.edu/publications/CDC2013.pdf) (University of Pennsylvania)
+
+## <a id="bio-inspired"></a>🐦 Bio-Inspired UAM
+
+*Each entry notes the biological model and the borrowed idea.*
+
+- [2021] ⭐ **Bird-Inspired Dynamic Grasping and Perching in Arboreal Environments (SNAG)** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.abj7562) [pdf](https://lentinklab.com/wp-content/uploads/2023/12/2021-bird-inspired-perching.pdf) (Stanford University) — 🐦 *model: peregrine-falcon / parrotlet legs & tendons; idea: stereotyped 50-ms snatch-and-grasp reflex + tendon lock for a 3D-printed perching gripper*
+- [2020] **PigeonBot — Soft Biohybrid Morphing Wings with Feathers** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.aay1246) [project](https://www.erchang.org/pigeonbot) (Stanford University) — 🕊️ *model: pigeon wing; idea: 40 real feathers passively deployed by elastic skin driven by only 4 wrist/finger servos → underactuated biohybrid morphing wing*
+- [2019] **RoboBee X-Wing — Untethered Insect-Sized Flapping Flight** · *Nature* [paper](https://www.nature.com/articles/s41586-019-1322-0) (Harvard University) — 🐝 *model: insect (bee-scale) flapping flight; idea: two piezo-actuated drivers flapping four wings at 200 Hz, solar-powered untethered 259-mg flight*
+- [2017] **Bat Bot B2 — A Biomimetic Robotic Bat** · *Science Robotics* [paper](https://pubmed.ncbi.nlm.nih.gov/33157861) [pdf](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/ScienceRobotics2017.pdf) (Caltech, UIUC) — 🦇 *model: bat wing; idea: 5 actuated joints per wing with stretchable silicone membrane replicating asymmetric fold-flap upstroke*
+
+## <a id="morphing"></a>🦋 Morphing & Reconfigurable UAV/UAM
+
+*Each entry notes the morphing / reconfiguration mechanism.*
+
+- [2019] **DRAGON — A Dual-Rotor-Embedded Multilink Robot with Multi-DoF Aerial Transformation** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/8258850) [project](https://www.dragon.t.u-tokyo.ac.jp/publications/references/2018-ral-dragon-zhao) (University of Tokyo) — 🐉 *mechanism: snake-like chain of 2-DoF links, each with a vectorable dual-rotor unit; transforms its whole shape mid-flight (line→L→S) to slalom through gaps, later extended into a flying manipulator*
+- [2019] **A Quadrotor with an Origami-Inspired Protective Mechanism** · *IEEE RA-L* [paper](https://arxiv.org/abs/1907.07056) (City University of Hong Kong) — 🗂️ *mechanism: passive origami foldable airframe/cage that buckles to absorb collision impact and self-restores in flight*
+- [2020] **PigeonBot — Biohybrid Feathered Morphing Wing** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.aay1246) [project](https://www.erchang.org/pigeonbot) (Stanford University) — 🪶 *mechanism: passive feather deployment via elastic skin, wing area/shape morphs with only wrist & finger actuation*
+- [2016] **FAST-Hex — A Fully-Actuated and Tiltable Hexarotor** · *IROS* [paper](https://ieeexplore.ieee.org/document/7759271) [pdf](https://hal.science/hal-01348538v1/document) (MPI for Biological Cybernetics, University of Twente, CNRS-LAAS) — 🔧 *mechanism: one central servo tilts all six arms together, switching between underactuated and fully-actuated flight in mid-air*
 
 ---
 
