@@ -1,4 +1,4 @@
-# 🚁 Awesome UAM Papers
+# Awesome UAM Papers
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
@@ -10,32 +10,32 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ## 📑 Contents
 
-- [🧭 Getting Started](#getting-started)
+- [Getting Started](#getting-started)
   - [Surveys & Reviews](#surveys)
   - [Nature & Science Family](#nature-science)
   - [IEEE T-RO Selection](#tro)
   - [Classic Foundations](#foundations)
-- [🛠️ Platforms & Morphology](#platforms)
+- [Platforms & Morphology](#platforms)
   - [Bio-Inspired UAM](#bio-inspired)
   - [Fully-Actuated & Omnidirectional Platforms](#fully-actuated)
   - [Morphing & Reconfigurable UAV/UAM](#morphing)
-- [🎛️ Control](#control)
+- [Control](#control)
   - [Whole-Body Control & Loco-Manipulation](#wbc)
   - [Disturbance Compensation & Estimation](#disturbance)
   - [Contact & Force Interaction](#contact-force)
-- [🧠 Learning-Based Methods](#learning)
+- [Learning-Based Methods](#learning)
   - [Simulators & Benchmarks](#simulators)
   - [RL & Learned Policies](#rl)
-- [🛰️ Multi-Robot Cooperation](#multi-robot)
+- [Multi-Robot Cooperation](#multi-robot)
   - [Multi-UAM Cooperative Manipulation](#multi-uam)
   - [Multi-UAV Cooperative Transport](#transport)
-- [🚁 Applications](#applications)
+- [Applications](#applications)
   - [Tool Use & Field Operations](#tools)
   - [Aerial Construction & Heterogeneous Teams](#construction)
 
 ---
 
-## <a id="getting-started"></a>🧭 Getting Started
+## <a id="getting-started"></a>Getting Started
 
 ### <a id="surveys"></a>Surveys & Reviews
 
@@ -70,7 +70,7 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ### <a id="foundations"></a>Classic Foundations
 
-- [2022] **A Benchmark Comparison of Learned Control Policies for Agile Quadrotor Flight (CTBR)** · *ICRA* [paper](https://arxiv.org/abs/2202.10796) [pdf](https://arxiv.org/pdf/2202.10796) (University of Zurich) ✦ *Davide Scaramuzza* — *collective-thrust & body-rate (CTBR) command interface transfers sim-to-real better than per-rotor thrusts; >45 km/h real flight*
+- [2022] **A Benchmark Comparison of Learned Control Policies for Agile Quadrotor Flight (CTBR)** · *ICRA* [paper](https://arxiv.org/abs/2202.10796) [pdf](https://arxiv.org/pdf/2202.10796) (University of Zurich) ✦ *Davide Scaramuzza* — *collective-thrust & body-rate (CTBR) 
 - [2018] **Design of a Lightweight Dual Arm System for Aerial Manipulation** · *Bioinspiration & Biomimetics* [paper](https://doi.org/10.1088/1748-3190/aa9d51) [pdf](https://idus.us.es/bitstreams/8aa25e92-ae25-4a04-8f29-8735f5232399/download) (University of Seville)
 - [2018] **An Anthropomorphic, Compliant, and Lightweight Dual Arm for Aerial Manipulation** · *IEEE Access* [paper](https://ieeexplore.ieee.org/document/8354886) [pdf](https://idus.us.es/bitstream/11441/87747/1/IEEEA_Suarez_2018_Design.pdf) (University of Seville)
 - [2014] **Aerial Manipulation Robot Composed of an Autonomous Helicopter and a 7-DOF Industrial Manipulator** · *ICRA* [paper](https://doi.org/10.1109/ICRA.2014.6907148) (DLR — German Aerospace Center)
@@ -80,7 +80,7 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ---
 
-## <a id="platforms"></a>🛠️ Platforms & Morphology
+## <a id="platforms"></a>Platforms & Morphology
 
 ### <a id="bio-inspired"></a>Bio-Inspired UAM
 
@@ -111,7 +111,7 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ---
 
-## <a id="control"></a>🎛️ Control
+## <a id="control"></a>Control
 
 ### <a id="wbc"></a>Whole-Body Control & Loco-Manipulation
 
@@ -143,7 +143,7 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ---
 
-## <a id="learning"></a>🧠 Learning-Based Methods
+## <a id="learning"></a>Learning-Based Methods
 
 ### <a id="simulators"></a>Simulators & Benchmarks
 
@@ -165,7 +165,7 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ---
 
-## <a id="multi-robot"></a>🛰️ Multi-Robot Cooperation
+## <a id="multi-robot"></a>Multi-Robot Cooperation
 
 ### <a id="multi-uam"></a>Multi-UAM Cooperative Manipulation
 
@@ -190,7 +190,7 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ---
 
-## <a id="applications"></a>🚁 Applications
+## <a id="applications"></a>Applications
 
 ### <a id="tools"></a>Tool Use & Field Operations
 
