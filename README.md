@@ -4,7 +4,7 @@
 
 A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor UAV + robot arm): platform design & morphology, whole-body control, disturbance rejection, contact-rich interaction, learning-based methods, and multi-robot cooperation for aerial manipulation.
 
-🔖 Last updated: Nov 2026 · ✦ renowned teams · 🛸UAV = aerial-robot paper without a manipulator, kept for its role in the UAM stack · Contributions welcome via PR!
+🔖 Last updated: Nov 2026 · **136 papers** (162 entries incl. cross-lists) · ✦ renowned teams · 🛸UAV = aerial-robot paper without a manipulator, kept for its role in the UAM stack · Contributions welcome via PR!
 
 ---
 
@@ -332,7 +332,3 @@ If you find this repository useful, please consider citing this list:
     year = {2026},
 }
 ```
-
-## 📄 License
-
-[MIT](https://opensource.org/licenses/MIT)
