@@ -41,15 +41,12 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 ### <a id="surveys"></a>Surveys & Reviews
 
+- [2026] **UAVs Meet Embodied Intelligence: Bridging Human Intents and Flying Dynamics Via Harnessing Physical-Digital AI Agents** · *arXiv* [paper](https://arxiv.org/abs/2609.18326) (Institute of Automation, Chinese Academy of Sciences) 🛸UAV — *UAV-wide embodied-AI roadmap; the autonomy context above the UAM stack*
 - [2026] **From Aerial Transportation to Aerial Interaction: A Review** · *Chinese Journal of Aeronautics* [paper](https://www.sciencedirect.com/science/article/pii/S1000936126003808) (Nanjing University of Aeronautics and Astronautics)
 - [2024] ⭐ **A Review of Real-Time Implementable Cooperative Aerial Manipulation** · *Drones (MDPI)* [paper](https://www.mdpi.com/2504-446x/8/5/196) [pdf](https://arxiv.org/pdf/2403.14347) (National Technical University of Athens, University of Denver)
 - [2022] ⭐ **Past, Present, and Future of Aerial Robotic Manipulators** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9462539) [pdf](https://idus.us.es/bitstreams/954638e3-7b65-4817-889e-a476317572a0/download) (University of Seville, CNRS-LAAS, University of Twente, Seoul National University) ✦ *Aníbal Ollero*
 - [2018] **Aerial Manipulation: A Literature Review** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/8506571) (University of Naples Federico II, University of Seville)
 - [2018] **Aerial Manipulation — A Literature Survey** · *Journal of Intelligent & Robotic Systems* [paper](https://link.springer.com/article/10.1007/s10846-018-0875-3) (Toronto Metropolitan University)
-
-*UAV-only (no manipulator):*
-
-- [2026] **UAVs Meet Embodied Intelligence: Bridging Human Intents and Flying Dynamics Via Harnessing Physical-Digital AI Agents** · *arXiv* [paper](https://arxiv.org/abs/2609.18326) (Institute of Automation, Chinese Academy of Sciences) 🛸UAV — *UAV-wide embodied-AI roadmap; the autonomy context above the UAM stack*
 
 ### <a id="nature-science"></a>Nature & Science Family
 
@@ -104,10 +101,6 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 - [2012] **Cartesian Impedance Control of a UAV with a Robotic Arm** · *SYROCO* [pdf](https://www.fedoa.unina.it/9621/1/SYROCO12_0158_MS.pdf) (University of Naples Federico II)
 - [2012] **Impedance Control of an Aerial Manipulator** · *ACC* [paper](https://ieeexplore.ieee.org/document/6425020) (University of Bologna) ✦ *Lorenzo Marconi*
 - [2011] ⭐ **Grasping from the Air: Hovering Capture and Load Stability** · *ICRA* [paper](https://www.eng.yale.edu/grablab/pubs/Pounds_ICRA2011.pdf) (Yale University) ✦ *Aaron Dollar*
-
-*UAV-only (no manipulator):*
-
-- [2022] **A Benchmark Comparison of Learned Control Policies for Agile Quadrotor Flight (CTBR)** · *ICRA* [paper](https://arxiv.org/abs/2202.10796) [pdf](https://arxiv.org/pdf/2202.10796) (University of Zurich) ✦ *Davide Scaramuzza* 🛸UAV — *collective-thrust & body-rate (CTBR) command interface transfers sim-to-real better than per-rotor thrusts; the low-level command layer of every UAM*
 
 ---
 
@@ -212,8 +205,9 @@ A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor 
 
 *Tooling that UAM controllers commonly build on — all flight-level (no arm).*
 
-- [2021] **acados — A Modular Open-Source Framework for Fast Embedded Optimal Control** · *Mathematical Programming Computation* [paper](https://doi.org/10.1007/s12532-021-00208-8) [code](https://github.com/acados/acados) (KU Leuven, ETH Zurich, TUM) 🛸UAV — *the de-facto NMPC solver backend for aerial WBC/force-control stacks*
+- [2022] **A Benchmark Comparison of Learned Control Policies for Agile Quadrotor Flight (CTBR)** · *ICRA* [paper](https://arxiv.org/abs/2202.10796) [pdf](https://arxiv.org/pdf/2202.10796) (University of Zurich) ✦ *Davide Scaramuzza* 🛸UAV — *collective-thrust & body-rate (CTBR) command interface transfers sim-to-real better than per-rotor thrusts; the low-level command layer of every UAM*
 - [2022] **L1 Adaptive Augmentation for Geometric Tracking Control of Quadrotors** · *ICRA* [paper](https://doi.org/10.1109/ICRA46639.2022.9811946) (University of Illinois Urbana-Champaign) 🛸UAV — *L1 adaptive augmentation on SE(3) geometric controllers for fast adaptation*
+- [2021] **acados — A Modular Open-Source Framework for Fast Embedded Optimal Control** · *Mathematical Programming Computation* [paper](https://doi.org/10.1007/s12532-021-00208-8) [code](https://github.com/acados/acados) (KU Leuven, ETH Zurich, TUM) 🛸UAV — *the de-facto NMPC solver backend for aerial WBC/force-control stacks*
 - [2009] **From PID to Active Disturbance Rejection Control** · *IEEE Trans. Industrial Electronics* [paper](https://doi.org/10.1109/TIE.2008.2011621) (Chinese Academy of Sciences) 🛸UAV — *Jingqing Han's canonical ADRC paper; basis of ESO-based UAM disturbance rejection*
 
 ---
