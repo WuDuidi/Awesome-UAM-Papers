@@ -4,7 +4,7 @@
 
 A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UAV + body-mounted robot arm), with a special focus on **cooperative multi-UAM systems**: multi-robot transport, dual-arm aerial manipulation, fully-actuated platforms, contact/tool interaction, aerial construction, and learning-based methods & benchmarks.
 
-🔖 Last updated: Nov 2026 · 74 unique papers (91 entries incl. cross-lists) · Contributions welcome via PR!
+🔖 Last updated: Nov 2026 · 78 unique papers (102 entries incl. cross-lists) · Contributions welcome via PR!
 
 ---
 
@@ -22,6 +22,8 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [📖 IEEE T-RO (UAV/UAM)](#tro)
 - [🐦 Bio-Inspired UAM](#bio-inspired)
 - [🦋 Morphing & Reconfigurable UAV/UAM](#morphing)
+- [🧘 Whole-Body Control & Loco-Manipulation](#wbc)
+- [🌬️ Disturbance Compensation & Estimation](#disturbance)
 
 ---
 
@@ -161,6 +163,29 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2019] **A Quadrotor with an Origami-Inspired Protective Mechanism** · *IEEE RA-L* [paper](https://arxiv.org/abs/1907.07056) (City University of Hong Kong) — 🗂️ *mechanism: passive origami foldable airframe/cage that buckles to absorb collision impact and self-restores in flight*
 - [2020] **PigeonBot — Biohybrid Feathered Morphing Wing** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.aay1246) [project](https://www.erchang.org/pigeonbot) (Stanford University) — 🪶 *mechanism: passive feather deployment via elastic skin, wing area/shape morphs with only wrist & finger actuation*
 - [2016] **FAST-Hex — A Fully-Actuated and Tiltable Hexarotor** · *IROS* [paper](https://ieeexplore.ieee.org/document/7759271) [pdf](https://hal.science/hal-01348538v1/document) (MPI for Biological Cybernetics, University of Twente, CNRS-LAAS) — 🔧 *mechanism: one central servo tilts all six arms together, switching between underactuated and fully-actuated flight in mid-air*
+
+---
+
+## <a id="wbc"></a>🧘 Whole-Body Control & Loco-Manipulation
+
+*Coordinated control of the flying base + arm as one body (aerial loco-manipulation). Cross-listed where noted.*
+
+- [2026] **Aerial Manipulation in the Wild with Onboard Perception, Policy Learning, and Whole-Body Control** · *arXiv* [paper](https://arxiv.org/abs/2609.30521) (The Chinese University of Hong Kong) — *visuomotor diffusion policy on top of a WBC with onboard LiDAR-inertial state estimation; outdoor, no motion capture*
+- [2026] **Global End-Effector Pose Control of an Underactuated Aerial Manipulator via Reinforcement Learning** · *ICRA* [paper](https://arxiv.org/abs/2512.21085) [pdf](https://arxiv.org/pdf/2512.21085) (TU Delft) — *RL whole-body coordination of quadrotor + 2-DoF arm for full 6-DoF end-effector pose, incl. pushing and heavy loads*
+- [2025] **Flying Hand: End-Effector-Centric Framework for Versatile Aerial Manipulation** · *RSS* [paper](https://www.roboticsproceedings.org/rss21/p130.pdf) [pdf](https://arxiv.org/abs/2504.10334) (CMU) — *end-effector-centric whole-body MPC with the arm as primary actor*
+- [2025] **Whole-Body Integrated Motion Planning for Aerial Manipulators (AM-Planner)** · *IEEE T-RO* [paper](https://arxiv.org/abs/2501.06493) [code](https://github.com/SYSU-HILAB/am-planner) (Sun Yat-sen University) — *joint base+arm waypoint optimization for versatile aerial tasks*
+- [2023] **Hierarchical Whole-Body Control of the Cable-Suspended Aerial Manipulator with Winch-Based Actuation** · *arXiv* [paper](https://arxiv.org/abs/2305.16466) (Korea University, DLR) — *hierarchical WBC for the winch-actuated cable-suspended manipulator (SAM lineage)*
+- [2012] **Cartesian Impedance Control of a UAV with a Robotic Arm** · *SYROCO* [pdf](https://www.fedoa.unina.it/9621/1/SYROCO12_0158_MS.pdf) (University of Naples Federico II) — *foundational coupled base-arm Cartesian impedance*
+
+## <a id="disturbance"></a>🌬️ Disturbance Compensation & Estimation
+
+*Wind, downwash, contact interaction, and arm-motion reaction — estimation and rejection. Cross-listed where noted.*
+
+- [2025] ⭐ **Proximal Cooperative Aerial Manipulation with Vertically Stacked Drones** · *Nature* [paper](https://www.nature.com/articles/s41586-025-09575-x) [pdf](https://ndownloader.figshare.com/files/58224982) (Westlake University, Lancaster University) — *explicit downwash modeling and compensation between stacked vehicles*
+- [2025] **Predictive Admittance Control for Aerial Physical Interaction** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/11155162) [pdf](https://ayhamalharbat.github.io/publication/2025-4-ral/2025-4-RAL.pdf) (University of Twente) — *model-based prediction to hold the desired impedance through contact/free-flight transitions*
+- [2024] **Robust Control of an Aerial Manipulator Based on a Variable Inertia Parameters Model** · *arXiv* [paper](https://arxiv.org/abs/2401.04316) (Shenyang Institute of Automation, CAS; Toronto Metropolitan University) — *arm-induced variable inertia explicitly modeled and compensated*
+- [2021] **Active Interaction Force Control for Contact-Based Inspection with a Fully Actuated Aerial Vehicle** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9295362) [pdf](https://arxiv.org/pdf/2003.09516v3) (ETH Zurich) — *maintains desired contact force while rejecting interaction disturbances*
+- [2009] **Wind Disturbance Estimation and Rejection for Quadrotor Position Control** · *AIAA Infotech@Aerospace* [paper](https://www.researchgate.net/publication/260122517_Wind_Disturbance_Estimation_and_Rejection_for_Quadrotor_Position_Control) (Stanford University) — *classic: wind-drag modeling + integral sliding-mode rejection on STARMAC*
 
 ---
 
