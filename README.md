@@ -2,26 +2,42 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UAV + body-mounted robot arm), with a special focus on **cooperative multi-UAM systems**: multi-robot transport, dual-arm aerial manipulation, fully-actuated platforms, contact/tool interaction, aerial construction, and learning-based methods & benchmarks.
+A curated reading list for **UAM — Unmanned Aerial Manipulators** (multirotor UAV + robot arm): platform design & morphology, whole-body control, disturbance rejection, contact-rich interaction, learning-based methods, and multi-robot cooperation for aerial manipulation.
 
-🔖 Last updated: Nov 2026 · 78 unique papers (100 entries incl. cross-lists) · ✦ marks papers from renowned teams · Contributions welcome via PR!
+🔖 Last updated: Nov 2026 · ✦ marks papers from renowned teams · Contributions welcome via PR!
 
 ---
 
 ## 📑 Contents
 
-- [🧭 Getting Started](#getting-started) — Surveys · Nature/Science & T-RO flagships · classic foundations
-- [🛠️ Platforms & Morphology](#platforms) — bio-inspired · fully-actuated/omnidirectional · morphing & reconfigurable
-- [🎛️ Control](#control) — whole-body control & loco-manipulation · disturbance compensation · contact & force
-- [🧠 Learning-Based Methods](#learning) — simulators & benchmarks · RL & learned policies
-- [🛰️ Multi-Robot Cooperation](#multi-robot) — multi-UAV transport · multi-UAM manipulation
-- [🚁 Applications](#applications) — tool use & field operations · aerial construction
+- [🧭 Getting Started](#getting-started)
+  - [Surveys & Reviews](#surveys)
+  - [Nature & Science Family](#nature-science)
+  - [IEEE T-RO Selection](#tro)
+  - [Classic Foundations](#foundations)
+- [🛠️ Platforms & Morphology](#platforms)
+  - [Bio-Inspired UAM](#bio-inspired)
+  - [Fully-Actuated & Omnidirectional Platforms](#fully-actuated)
+  - [Morphing & Reconfigurable UAV/UAM](#morphing)
+- [🎛️ Control](#control)
+  - [Whole-Body Control & Loco-Manipulation](#wbc)
+  - [Disturbance Compensation & Estimation](#disturbance)
+  - [Contact & Force Interaction](#contact-force)
+- [🧠 Learning-Based Methods](#learning)
+  - [Simulators & Benchmarks](#simulators)
+  - [RL & Learned Policies](#rl)
+- [🛰️ Multi-Robot Cooperation](#multi-robot)
+  - [Multi-UAM Cooperative Manipulation](#multi-uam)
+  - [Multi-UAV Cooperative Transport](#transport)
+- [🚁 Applications](#applications)
+  - [Tool Use & Field Operations](#tools)
+  - [Aerial Construction & Heterogeneous Teams](#construction)
 
 ---
 
 ## <a id="getting-started"></a>🧭 Getting Started
 
-### Surveys & Reviews
+### <a id="surveys"></a>Surveys & Reviews
 
 - [2026] **From Aerial Transportation to Aerial Interaction: A Review** · *Chinese Journal of Aeronautics* [paper](https://www.sciencedirect.com/science/article/pii/S1000936126003808) (Nanjing University of Aeronautics and Astronautics)
 - [2024] ⭐ **A Review of Real-Time Implementable Cooperative Aerial Manipulation** · *Drones (MDPI)* [paper](https://www.mdpi.com/2504-446x/8/5/196) [pdf](https://arxiv.org/pdf/2403.14347) (National Technical University of Athens, University of Denver)
@@ -29,7 +45,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2018] **Aerial Manipulation: A Literature Review** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/8506571) (University of Naples Federico II, University of Seville)
 - [2018] **Aerial Manipulation — A Literature Survey** · *Journal of Intelligent & Robotic Systems* [paper](https://link.springer.com/article/10.1007/s10846-018-0875-3) (Toronto Metropolitan University)
 
-### Flagship Papers in Nature & Science Family
+### <a id="nature-science"></a>Nature & Science Family
 
 - [2025] ⭐ **Proximal Cooperative Aerial Manipulation with Vertically Stacked Drones** · *Nature* [paper](https://www.nature.com/articles/s41586-025-09575-x) [pdf](https://ndownloader.figshare.com/files/58224982) (Westlake University, Lancaster University) ✦ *Shiyu Zhao*
 - [2025] **Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.adu8015) [pdf](https://arxiv.org/pdf/2501.18802) (TU Delft, Sapienza University of Rome, University of Twente) ✦ *Javier Alonso-Mora*
@@ -44,7 +60,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2019] **Untethered Flight of an Insect-Sized Flapping-Wing Microscale Aerial Vehicle (RoboBee X-Wing)** · *Nature* [paper](https://www.nature.com/articles/s41586-019-1322-0) (Harvard University) ✦ *Robert Wood*
 - [2017] **A Biomimetic Robotic Platform to Study Flight Specializations of Bats (Bat Bot B2)** · *Science Robotics* [paper](https://pubmed.ncbi.nlm.nih.gov/33157861) [pdf](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/ScienceRobotics2017.pdf) (Caltech, UIUC) ✦ *Soon-Jo Chung*
 
-### IEEE T-RO Selection
+### <a id="tro"></a>IEEE T-RO Selection
 
 - [2025] **Whole-Body Integrated Motion Planning for Aerial Manipulators (AM-Planner)** · *IEEE T-RO* [paper](https://arxiv.org/abs/2501.06493) [code](https://github.com/SYSU-HILAB/am-planner) (Sun Yat-sen University) — *first whole-body (base + arm) integrated planner for aerial manipulators*
 - [2022] ⭐ **Past, Present, and Future of Aerial Robotic Manipulators** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9462539) [pdf](https://idus.us.es/bitstreams/954638e3-7b65-4817-889e-a476317572a0/download) (University of Seville, CNRS-LAAS, University of Twente, Seoul National University) ✦ *Aníbal Ollero*
@@ -52,8 +68,9 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2018] **A Novel Robotic Platform for Aerial Manipulation Using Quadrotors as Rotating Thrust Generators** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/8294249) (Seoul National University) ✦ *Dongjun Lee* — *quadrotors spin around a jointed arm to generate joint torques*
 - [2013] ⭐ **Geometric Control of a Quadrotor with a Cable-Suspended Load** · *IEEE T-RO* [paper](https://doi.org/10.1109/TRO.2013.2271569) [pdf](https://hybrid-robotics.berkeley.edu/publications/CDC2013.pdf) (University of Pennsylvania) ✦ *Vijay Kumar*
 
-### Classic Foundations
+### <a id="foundations"></a>Classic Foundations
 
+- [2022] **A Benchmark Comparison of Learned Control Policies for Agile Quadrotor Flight (CTBR)** · *ICRA* [paper](https://arxiv.org/abs/2202.10796) [pdf](https://arxiv.org/pdf/2202.10796) (University of Zurich) ✦ *Davide Scaramuzza* — *collective-thrust & body-rate (CTBR) command interface transfers sim-to-real better than per-rotor thrusts; >45 km/h real flight*
 - [2018] **Design of a Lightweight Dual Arm System for Aerial Manipulation** · *Bioinspiration & Biomimetics* [paper](https://doi.org/10.1088/1748-3190/aa9d51) [pdf](https://idus.us.es/bitstreams/8aa25e92-ae25-4a04-8f29-8735f5232399/download) (University of Seville)
 - [2018] **An Anthropomorphic, Compliant, and Lightweight Dual Arm for Aerial Manipulation** · *IEEE Access* [paper](https://ieeexplore.ieee.org/document/8354886) [pdf](https://idus.us.es/bitstream/11441/87747/1/IEEEA_Suarez_2018_Design.pdf) (University of Seville)
 - [2014] **Aerial Manipulation Robot Composed of an Autonomous Helicopter and a 7-DOF Industrial Manipulator** · *ICRA* [paper](https://doi.org/10.1109/ICRA.2014.6907148) (DLR — German Aerospace Center)
@@ -65,7 +82,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 
 ## <a id="platforms"></a>🛠️ Platforms & Morphology
 
-### Bio-Inspired UAM
+### <a id="bio-inspired"></a>Bio-Inspired UAM
 
 *Each entry notes the biological model and the borrowed idea.*
 
@@ -74,7 +91,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2019] **RoboBee X-Wing — Untethered Insect-Sized Flapping Flight** · *Nature* [paper](https://www.nature.com/articles/s41586-019-1322-0) (Harvard University) ✦ *Robert Wood* — 🐝 *model: insect (bee-scale) flapping flight; idea: two piezo-actuated drivers flapping four wings at 200 Hz, solar-powered untethered 259-mg flight*
 - [2017] **Bat Bot B2 — A Biomimetic Robotic Bat** · *Science Robotics* [paper](https://pubmed.ncbi.nlm.nih.gov/33157861) [pdf](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/ScienceRobotics2017.pdf) (Caltech, UIUC) ✦ *Soon-Jo Chung* — 🦇 *model: bat wing; idea: 5 actuated joints per wing with stretchable silicone membrane replicating asymmetric fold-flap upstroke*
 
-### Fully-Actuated & Omnidirectional Platforms
+### <a id="fully-actuated"></a>Fully-Actuated & Omnidirectional Platforms
 
 - [2020] **Fully-Actuated Aerial Manipulator for Infrastructure Contact Inspection: Design, Modeling, Localization, and Control** · *IEEE TASE* [paper](https://ieeexplore.ieee.org/document/9114869) [pdf](https://idus.us.es/items/4338b496-9292-4a71-8462-c0cbfa414528) (University of Seville, University of Luxembourg)
 - [2019] ⭐ **An Omnidirectional Aerial Manipulation Platform for Robust Interaction with Unstructured Environments** · *RSS* [paper](https://www.roboticsproceedings.org/rss15/p19.pdf) (ETH Zurich) ✦ *Roland Siegwart*
@@ -83,7 +100,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2016] **Modeling and Control of FAST-Hex: A Fully-Actuated and Tiltable Hexarotor** · *IROS* [paper](https://ieeexplore.ieee.org/document/7759271) [pdf](https://hal.science/hal-01348538v1/document) (MPI for Biological Cybernetics, University of Twente, CNRS-LAAS) ✦ *Antonio Franchi*
 - [2015] **Modeling, Control and Design Optimization for a Fully-Actuated Hexarotor** · *ICRA* [pdf](https://hal.science/hal-01134829v1/document) (MPI for Biological Cybernetics, University of Twente) ✦ *Antonio Franchi, Heinrich Bülthoff*
 
-### Morphing & Reconfigurable UAV/UAM
+### <a id="morphing"></a>Morphing & Reconfigurable UAV/UAM
 
 *Each entry notes the morphing / reconfiguration mechanism.*
 
@@ -96,7 +113,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 
 ## <a id="control"></a>🎛️ Control
 
-### Whole-Body Control & Loco-Manipulation
+### <a id="wbc"></a>Whole-Body Control & Loco-Manipulation
 
 - [2026] **Aerial Manipulation in the Wild with Onboard Perception, Policy Learning, and Whole-Body Control** · *arXiv* [paper](https://arxiv.org/abs/2609.30521) (The Chinese University of Hong Kong) — *visuomotor diffusion policy on top of a WBC with onboard LiDAR-inertial state estimation; outdoor, no motion capture*
 - [2026] **Global End-Effector Pose Control of an Underactuated Aerial Manipulator via Reinforcement Learning** · *ICRA* [paper](https://arxiv.org/abs/2512.21085) [pdf](https://arxiv.org/pdf/2512.21085) (TU Delft) — *RL whole-body coordination of quadrotor + 2-DoF arm for full 6-DoF end-effector pose, incl. pushing and heavy loads*
@@ -105,7 +122,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2023] **Hierarchical Whole-Body Control of the Cable-Suspended Aerial Manipulator with Winch-Based Actuation** · *arXiv* [paper](https://arxiv.org/abs/2305.16466) (Korea University, DLR) — *hierarchical WBC for the winch-actuated cable-suspended manipulator (SAM lineage)*
 - [2012] **Cartesian Impedance Control of a UAV with a Robotic Arm** · *SYROCO* [pdf](https://www.fedoa.unina.it/9621/1/SYROCO12_0158_MS.pdf) (University of Naples Federico II) — *foundational coupled base-arm Cartesian impedance*
 
-### Disturbance Compensation & Estimation
+### <a id="disturbance"></a>Disturbance Compensation & Estimation
 
 *Wind, downwash, contact interaction, and arm-motion reaction — estimation and rejection.*
 
@@ -115,7 +132,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2021] **Active Interaction Force Control for Contact-Based Inspection with a Fully Actuated Aerial Vehicle** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9295362) [pdf](https://arxiv.org/pdf/2003.09516v3) (ETH Zurich) ✦ *Roland Siegwart* — *maintains desired contact force while rejecting interaction disturbances*
 - [2009] **Wind Disturbance Estimation and Rejection for Quadrotor Position Control** · *AIAA Infotech@Aerospace* [paper](https://www.researchgate.net/publication/260122517_Wind_Disturbance_Estimation_and_Rejection_for_Quadrotor_Position_Control) (Stanford University) — *classic: wind-drag modeling + integral sliding-mode rejection on STARMAC*
 
-### Contact & Force Interaction
+### <a id="contact-force"></a>Contact & Force Interaction
 
 - [2025] **Predictive Admittance Control for Aerial Physical Interaction** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/11155162) [pdf](https://ayhamalharbat.github.io/publication/2025-4-ral/2025-4-RAL.pdf) (University of Twente) ✦ *Antonio Franchi*
 - [2021] **Active Interaction Force Control for Contact-Based Inspection with a Fully Actuated Aerial Vehicle** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9295362) [pdf](https://arxiv.org/pdf/2003.09516v3) (ETH Zurich) ✦ *Roland Siegwart*
@@ -128,14 +145,14 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 
 ## <a id="learning"></a>🧠 Learning-Based Methods
 
-### Simulators & Benchmarks
+### <a id="simulators"></a>Simulators & Benchmarks
 
 - [2026] ⭐ **AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning** · *arXiv* [paper](https://arxiv.org/abs/2609.00641) [project](https://ambench.github.io) (The Chinese University of Hong Kong, CMU) ✦ *Guanya Shi* — *12 tasks, 3 embodiments; single-UAM only → multi-UAM is the open gap*
 - [2025] **Aerial Gym Simulator: A Framework for Highly Parallelized Simulation of Aerial Robots (multi-linked embodiments)** · *arXiv* [paper](https://arxiv.org/abs/2503.01471) [pdf](https://arxiv.org/pdf/2503.01471) [code](https://github.com/ntnu-arl/aerial_gym_simulator) (NTNU) ✦ *Kostas Alexis* — *adds drone+arm multi-linked bodies*
 - [2024] ⭐ **Aerial Gym: Isaac Gym Simulator for Aerial Robots** · *IEEE RA-L* [paper](https://arxiv.org/abs/2305.16510) [pdf](https://arxiv.org/pdf/2305.16510) [code](https://github.com/ntnu-arl/aerial_gym_simulator) (NTNU) ✦ *Kostas Alexis*
 - [2020] **Flightmare: A Flexible Quadrotor Simulator** · *CoRL* [paper](https://arxiv.org/abs/2009.00563) [pdf](https://arxiv.org/pdf/2009.00563) [code](https://github.com/uzh-rpg/flightmare) (University of Zurich) ✦ *Davide Scaramuzza*
 
-### RL & Learned Policies
+### <a id="rl"></a>RL & Learned Policies
 
 - [2026] **AIR-VLA: Vision-Language-Action Systems for Aerial Manipulation** · *arXiv* [paper](https://arxiv.org/abs/2601.21602) [code](https://github.com/SpencerSon2001/AIR-VLA) (Institute of Automation, Chinese Academy of Sciences)
 - [2026] **Whole-Body Aerial Grasping and Lifting via Partial Visual Observations** · *arXiv* [paper](https://arxiv.org/abs/2610.00404) [pdf](https://arxiv.org/pdf/2610.00404) (Nanyang Technological University)
@@ -150,7 +167,16 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 
 ## <a id="multi-robot"></a>🛰️ Multi-Robot Cooperation
 
-### Multi-UAV Cooperative Transport
+### <a id="multi-uam"></a>Multi-UAM Cooperative Manipulation
+
+- [2025] ⭐⭐ **Proximal Cooperative Aerial Manipulation with Vertically Stacked Drones** · *Nature* [paper](https://www.nature.com/articles/s41586-025-09575-x) [pdf](https://ndownloader.figshare.com/files/58224982) (Westlake University, Lancaster University) ✦ *Shiyu Zhao* — *tool handover between stacked drones under downwash*
+- [2021] **Estimation and Control of Cooperative Aerial Manipulators for a Payload with an Arbitrary Center of Mass** · *Sensors* [paper](https://www.mdpi.com/1424-8220/21/19/6452) [pdf](https://pmc-oa-opendata.s3.amazonaws.com/PMC8512681.1/PMC8512681.1.pdf) (Korea Institute of Science and Technology)
+- [2018] ⭐ **Cooperative Aerial Manipulation Using Multirotors with Multi-DOF Robotic Arms** · *IEEE/ASME Trans. Mechatronics* [paper](https://ieeexplore.ieee.org/document/8253830) (Seoul National University) ✦ *H. Jin Kim* — *flagship two-hexarotor+arm rod transport*
+- [2018] **First Experimental Results on Motion Planning for Transportation in Aerial Long-Reach Manipulator with Two Arms** · *IROS* [paper](https://ieeexplore.ieee.org/document/8594123) [pdf](https://zenodo.org/records/2621105/files/A.Caballero_IROS_2018.pdf) (University of Seville)
+- [2015] ⭐ **Hierarchical Cooperative Control Framework of Multiple Quadrotor-Manipulator Systems** · *ICRA* [paper](https://ieeexplore.ieee.org/document/7139844) (Seoul National University) ✦ *Dongjun Lee* — *first general multi-QMS framework*
+- [2015] **Cooperative Impedance Control for Multiple UAVs with a Robotic Arm** · *IROS* [paper](https://ieeexplore.ieee.org/document/7353697) (University of Salerno)
+
+### <a id="transport"></a>Multi-UAV Cooperative Transport
 
 - [2025] ⭐ **Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.adu8015) [pdf](https://arxiv.org/pdf/2501.18802) (TU Delft, Sapienza University of Rome, University of Twente) ✦ *Javier Alonso-Mora*
 - [2025] **Distributed NMPC for Cooperative Aerial Manipulation of Cable-Suspended Loads** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/11145772) [pdf](https://hal.science/hal-05239115v1/file/p2024b_distributed_MPC_.pdf) (University of Bologna, CNRS-LAAS)
@@ -162,20 +188,11 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2013] **Cooperative Grasping and Transport Using Multiple Quadrotors** · *DARS* [paper](https://link.springer.com/chapter/10.1007/978-3-642-32723-0_39) [pdf](https://web.archive.org/web/20120526220045id_/http://www.seas.upenn.edu/~dmel/mellingerDARS10.pdf) (University of Pennsylvania) ✦ *Vijay Kumar*
 - [2011] **Cooperative Manipulation and Transportation with Aerial Robots** · *Autonomous Robots* [paper](https://link.springer.com/article/10.1007/s10514-010-9205-0) [pdf](https://www.roboticsproceedings.org/rss05/p1.pdf) (University of Pennsylvania) ✦ *Vijay Kumar*
 
-### Multi-UAM Cooperative Manipulation
-
-- [2025] ⭐⭐ **Proximal Cooperative Aerial Manipulation with Vertically Stacked Drones** · *Nature* [paper](https://www.nature.com/articles/s41586-025-09575-x) [pdf](https://ndownloader.figshare.com/files/58224982) (Westlake University, Lancaster University) ✦ *Shiyu Zhao* — *tool handover between stacked drones under downwash*
-- [2021] **Estimation and Control of Cooperative Aerial Manipulators for a Payload with an Arbitrary Center of Mass** · *Sensors* [paper](https://www.mdpi.com/1424-8220/21/19/6452) [pdf](https://pmc-oa-opendata.s3.amazonaws.com/PMC8512681.1/PMC8512681.1.pdf) (Korea Institute of Science and Technology)
-- [2018] ⭐ **Cooperative Aerial Manipulation Using Multirotors with Multi-DOF Robotic Arms** · *IEEE/ASME Trans. Mechatronics* [paper](https://ieeexplore.ieee.org/document/8253830) (Seoul National University) ✦ *H. Jin Kim* — *flagship two-hexarotor+arm rod transport*
-- [2018] **First Experimental Results on Motion Planning for Transportation in Aerial Long-Reach Manipulator with Two Arms** · *IROS* [paper](https://ieeexplore.ieee.org/document/8594123) [pdf](https://zenodo.org/records/2621105/files/A.Caballero_IROS_2018.pdf) (University of Seville)
-- [2015] ⭐ **Hierarchical Cooperative Control Framework of Multiple Quadrotor-Manipulator Systems** · *ICRA* [paper](https://ieeexplore.ieee.org/document/7139844) (Seoul National University) ✦ *Dongjun Lee* — *first general multi-QMS framework*
-- [2015] **Cooperative Impedance Control for Multiple UAVs with a Robotic Arm** · *IROS* [paper](https://ieeexplore.ieee.org/document/7353697) (University of Salerno)
-
 ---
 
 ## <a id="applications"></a>🚁 Applications
 
-### Tool Use & Field Operations
+### <a id="tools"></a>Tool Use & Field Operations
 
 - [2025] **Pointillism Wall Painting Drone Using Bouncing Frequency Control** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/9830012) [pdf](https://hal.science/hal-05096557v1/file/STRAD_Format_IEEE_RA_L_Final_Version.pdf) (University Grenoble Alpes, GIPSA-lab)
 - [2023] ⭐ **A Perching and Tilting Aerial Robot for Precise and Versatile Power Tool Work on Vertical Walls** · *IROS* [paper](https://arxiv.org/abs/2310.10548) [pdf](https://arxiv.org/pdf/2310.10548) (ETH Zurich) — *150 N concrete drilling*
@@ -188,7 +205,7 @@ A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UA
 - [2018] **PaintCopter: An Autonomous UAV for Spray Painting on 3D Surfaces** · *IEEE RA-L + IROS* [paper](https://ieeexplore.ieee.org/document/8432222) [pdf](http://disneyresearch.s3.amazonaws.com/wp-content/uploads/20181001120656/PaintCopter-An-Autonomous-UAV-for-Spray-Painting-on-3D-Surfaces-Paper.pdf) (Disney Research Zurich, ETH Zurich)
 - [2014] ⭐ **Towards Valve Turning Using a Dual-Arm Aerial Manipulator** · *IROS* [paper](https://www.semanticscholar.org/paper/8f0aeb1a4216df9fa9a8def78c106c432c837bb1) (Worcester Polytechnic Institute, University of Zagreb)
 
-### Aerial Construction & Heterogeneous Teams
+### <a id="construction"></a>Aerial Construction & Heterogeneous Teams
 
 - [2022] ⭐ **Aerial Additive Manufacturing with Multiple Autonomous Robots** · *Nature* [paper](https://www.nature.com/articles/s41586-022-04988-4) (Imperial College London, Empa) ✦ *Mirko Kovac*
 - [2018] **Tele-MAGMaS: An Aerial–Ground Comanipulator System** · *IEEE RAM* [paper](https://ieeexplore.ieee.org/document/8644023) [pdf](https://inria.hal.science/hal-01935127v1/file/2018_ieeeram_staub.pdf) (CNRS-LAAS, University of Twente, University of Siena) ✦ *Paolo Robuffo Giordano*
@@ -206,6 +223,20 @@ Pull requests are welcome! Suggested format:
 ```
 
 ⭐ = must-read · ✦ = paper from a renowned team / with a renowned co-author. Papers without an open-access copy link to the publisher page only.
+
+## 📖 Citation
+
+If you find this repository useful, please consider citing this list:
+
+```bibtex
+@misc{wuduidi2026awesomeuampapers,
+    title = {Awesome-UAM-Papers},
+    author = {WuDuidi},
+    journal = {GitHub repository},
+    url = {https://github.com/WuDuidi/Awesome-UAM-Papers},
+    year = {2026},
+}
+```
 
 ## 📄 License
 
