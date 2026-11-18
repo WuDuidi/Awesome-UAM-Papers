@@ -1,0 +1,128 @@
+# 🚁 Awesome UAM Papers
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+A curated paper list for **UAM — Unmanned Aerial Manipulators** (multirotor UAV + body-mounted robot arm), with a special focus on **cooperative multi-UAM systems**: multi-robot transport, dual-arm aerial manipulation, fully-actuated platforms, contact/tool interaction, aerial construction, and learning-based methods & benchmarks.
+
+🔖 Last updated: Nov 2026 · 66 papers · Contributions welcome via PR!
+
+---
+
+## 📑 Contents
+
+- [📚 Surveys & Reviews](#surveys)
+- [🧱 Foundations & Landmark Demonstrations](#foundations)
+- [⚙️ Fully-Actuated & Omnidirectional Platforms](#fully-actuated)
+- [🪢 Multi-UAV Cooperative Transport](#transport)
+- [🤝 Multi-UAM Cooperative Manipulation](#multi-uam)
+- [🏗️ Aerial Construction & Heterogeneous Teams](#construction)
+- [🔧 Contact Inspection, Tool Use & Force Interaction](#contact)
+- [🧠 Learning-Based Methods, Simulators & Benchmarks](#learning)
+
+---
+
+## <a id="surveys"></a>📚 Surveys & Reviews
+
+- [2026] **From Aerial Transportation to Aerial Interaction: A Review** · *Chinese Journal of Aeronautics* [paper](https://www.sciencedirect.com/science/article/pii/S1000936126003808) (Nanjing University of Aeronautics and Astronautics)
+- [2024] ⭐ **A Review of Real-Time Implementable Cooperative Aerial Manipulation** · *Drones (MDPI)* [paper](https://www.mdpi.com/2504-446x/8/5/196) [pdf](https://arxiv.org/pdf/2403.14347) (National Technical University of Athens, University of Denver)
+- [2022] ⭐ **Past, Present, and Future of Aerial Robotic Manipulators** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9462539) [pdf](https://idus.us.es/bitstreams/954638e3-7b65-4817-889e-a476317572a0/download) (University of Seville, CNRS-LAAS, University of Twente, Seoul National University)
+- [2018] **Aerial Manipulation: A Literature Review** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/8506571) (University of Naples Federico II, University of Seville)
+- [2018] **Aerial Manipulation — A Literature Survey** · *Journal of Intelligent & Robotic Systems* [paper](https://link.springer.com/article/10.1007/s10846-018-0875-3) (Toronto Metropolitan University)
+
+## <a id="foundations"></a>🧱 Foundations & Landmark Demonstrations
+
+- [2022] **Swarm of Micro Flying Robots in the Wild** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.abm5954) [pdf](https://zhepeiwang.github.io/pubs/sr_2022_swarm.pdf) [code](https://github.com/ZJU-FAST-Lab/EGO-Planner-v2) (Zhejiang University)
+- [2021] **Bird-Inspired Dynamic Grasping and Perching in Arboreal Environments (SNAG)** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.abj7562) [pdf](https://lentinklab.com/wp-content/uploads/2023/12/2021-bird-inspired-perching.pdf) (Stanford University)
+- [2021] **Predictive Control of Aerial Swarms in Cluttered Environments** · *Nature Machine Intelligence* [paper](https://www.nature.com/articles/s42256-021-00341-y) (EPFL)
+- [2018] **Design of a Lightweight Dual Arm System for Aerial Manipulation** · *Bioinspiration & Biomimetics* [paper](https://doi.org/10.1088/1748-3190/aa9d51) [pdf](https://idus.us.es/bitstreams/8aa25e92-ae25-4a04-8f29-8735f5232399/download) (University of Seville)
+- [2018] **An Anthropomorphic, Compliant, and Lightweight Dual Arm for Aerial Manipulation** · *IEEE Access* [paper](https://ieeexplore.ieee.org/document/8354886) [pdf](https://idus.us.es/bitstream/11441/87747/1/IEEEA_Suarez_2018_Design.pdf) (University of Seville)
+- [2014] **Aerial Manipulation Robot Composed of an Autonomous Helicopter and a 7-DOF Industrial Manipulator** · *ICRA* [paper](https://doi.org/10.1109/ICRA.2014.6907148) (DLR — German Aerospace Center)
+- [2012] **Cartesian Impedance Control of a UAV with a Robotic Arm** · *SYROCO* [pdf](https://www.fedoa.unina.it/9621/1/SYROCO12_0158_MS.pdf) (University of Naples Federico II)
+- [2012] **Impedance Control of an Aerial Manipulator** · *ACC* [paper](https://ieeexplore.ieee.org/document/6425020) (University of Bologna)
+- [2011] ⭐ **Grasping from the Air: Hovering Capture and Load Stability** · *ICRA* [paper](https://www.eng.yale.edu/grablab/pubs/Pounds_ICRA2011.pdf) (Yale University)
+
+## <a id="fully-actuated"></a>⚙️ Fully-Actuated & Omnidirectional Platforms
+
+- [2020] **Fully-Actuated Aerial Manipulator for Infrastructure Contact Inspection: Design, Modeling, Localization, and Control** · *IEEE TASE* [paper](https://ieeexplore.ieee.org/document/9114869) [pdf](https://idus.us.es/items/4338b496-9292-4a71-8462-c0cbfa414528) (University of Seville, University of Luxembourg)
+- [2019] ⭐ **An Omnidirectional Aerial Manipulation Platform for Robust Interaction with Unstructured Environments** · *RSS* [paper](https://www.roboticsproceedings.org/rss15/p19.pdf) (ETH Zurich)
+- [2018] **ODAR: Aerial Manipulation Platform Enabling Omnidirectional Wrench Generation** · *IEEE/ASME Trans. Mechatronics* [paper](https://ieeexplore.ieee.org/document/8401328) (Seoul National University)
+- [2017] **6D Physical Interaction with a Fully Actuated Aerial Robot** · *ICRA* [pdf](https://laas.hal.science/hal-01476814v1/document) (MPI for Biological Cybernetics, University of Cassino, CNRS-LAAS)
+- [2016] **Modeling and Control of FAST-Hex: A Fully-Actuated and Tiltable Hexarotor** · *IROS* [paper](https://ieeexplore.ieee.org/document/7759271) [pdf](https://hal.science/hal-01348538v1/document) (MPI for Biological Cybernetics, University of Twente, CNRS-LAAS)
+- [2015] **Modeling, Control and Design Optimization for a Fully-Actuated Hexarotor** · *ICRA* [pdf](https://hal.science/hal-01134829v1/document) (MPI for Biological Cybernetics, University of Twente)
+
+## <a id="transport"></a>🪢 Multi-UAV Cooperative Transport
+
+- [2025] ⭐ **Agile and Cooperative Aerial Manipulation of a Cable-Suspended Load** · *Science Robotics* [paper](https://www.science.org/doi/10.1126/scirobotics.adu8015) [pdf](https://arxiv.org/pdf/2501.18802) (TU Delft, Sapienza University of Rome, University of Twente)
+- [2025] **Distributed NMPC for Cooperative Aerial Manipulation of Cable-Suspended Loads** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/11145772) [pdf](https://hal.science/hal-05239115v1/file/p2024b_distributed_MPC_.pdf) (University of Bologna, CNRS-LAAS)
+- [2020] **Scalable Cooperative Transport of Cable-Suspended Loads with UAVs Using Distributed Trajectory Optimization (Team-Lift)** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/9073952) [pdf](https://thowell.github.io/documents/team_lift_ral.pdf) (Stanford University, CMU, UIUC)
+- [2018] **Cooperative Object Transport in 3D with Multiple Quadrotors Using No Peer Communication** · *ICRA* [pdf](https://stanfordasl.github.io/wp-content/papercite-data/pdf/Wang.Singh.Pavone.ea.ICRA18.pdf) (Stanford University)
+- [2014] **Geometric Control of a Quadrotor with a Cable-Suspended Rigid Body** · *arXiv* [paper](https://arxiv.org/abs/1403.3684) (University of Pennsylvania)
+- [2013] ⭐ **Geometric Control of a Quadrotor with a Cable-Suspended Load** · *IEEE T-RO* [paper](https://doi.org/10.1109/TRO.2013.2271569) [pdf](https://hybrid-robotics.berkeley.edu/publications/CDC2013.pdf) (University of Pennsylvania)
+- [2013] **Geometric Control of Cooperating Multiple Quadrotor UAVs with a Suspended Payload** · *CDC* [pdf](https://hybrid-robotics.berkeley.edu/publications/CDC2013a.pdf) (University of Pennsylvania)
+- [2013] **Cooperative Grasping and Transport Using Multiple Quadrotors** · *DARS* [paper](https://link.springer.com/chapter/10.1007/978-3-642-32723-0_39) [pdf](https://web.archive.org/web/20120526220045id_/http://www.seas.upenn.edu/~dmel/mellingerDARS10.pdf) (University of Pennsylvania)
+- [2011] **Cooperative Manipulation and Transportation with Aerial Robots** · *Autonomous Robots* [paper](https://link.springer.com/article/10.1007/s10514-010-9205-0) [pdf](https://www.roboticsproceedings.org/rss05/p1.pdf) (University of Pennsylvania)
+
+## <a id="multi-uam"></a>🤝 Multi-UAM Cooperative Manipulation
+
+- [2025] ⭐⭐ **Proximal Cooperative Aerial Manipulation with Vertically Stacked Drones** · *Nature* [paper](https://www.nature.com/articles/s41586-025-09575-x) [pdf](https://ndownloader.figshare.com/files/58224982) (Westlake University, Lancaster University) — *tool handover between stacked drones under downwash*
+- [2021] **Estimation and Control of Cooperative Aerial Manipulators for a Payload with an Arbitrary Center of Mass** · *Sensors* [paper](https://www.mdpi.com/1424-8220/21/19/6452) [pdf](https://pmc-oa-opendata.s3.amazonaws.com/PMC8512681.1/PMC8512681.1.pdf) (Korea Institute of Science and Technology)
+- [2018] ⭐ **Cooperative Aerial Manipulation Using Multirotors with Multi-DOF Robotic Arms** · *IEEE/ASME Trans. Mechatronics* [paper](https://ieeexplore.ieee.org/document/8253830) (Seoul National University) — *flagship two-hexarotor+arm rod transport*
+- [2018] **First Experimental Results on Motion Planning for Transportation in Aerial Long-Reach Manipulator with Two Arms** · *IROS* [paper](https://ieeexplore.ieee.org/document/8594123) [pdf](https://zenodo.org/records/2621105/files/A.Caballero_IROS_2018.pdf) (University of Seville)
+- [2015] ⭐ **Hierarchical Cooperative Control Framework of Multiple Quadrotor-Manipulator Systems** · *ICRA* [paper](https://ieeexplore.ieee.org/document/7139844) (Seoul National University) — *first general multi-QMS framework*
+- [2015] **Cooperative Impedance Control for Multiple UAVs with a Robotic Arm** · *IROS* [paper](https://ieeexplore.ieee.org/document/7353697) (University of Salerno)
+
+## <a id="construction"></a>🏗️ Aerial Construction & Heterogeneous Teams
+
+- [2022] ⭐ **Aerial Additive Manufacturing with Multiple Autonomous Robots** · *Nature* [paper](https://www.nature.com/articles/s41586-022-04988-4) (Imperial College London, Empa) — *BuilDrone + ScanDrone swarm construction*
+- [2018] **Tele-MAGMaS: An Aerial–Ground Comanipulator System** · *IEEE RAM* [paper](https://ieeexplore.ieee.org/document/8644023) [pdf](https://inria.hal.science/hal-01935127v1/file/2018_ieeeram_staub.pdf) (CNRS-LAAS, University of Twente, University of Siena)
+- [2018] ⭐ **Modeling and Control of Multiple Aerial-Ground Manipulator System (MAGMaS) with Load Flexibility** · *IROS* [paper](https://ieeexplore.ieee.org/document/8593834) [pdf](https://laas.hal.science/hal-01964779v1/file/2018s-YanStaFraLee-preprint.pdf) (CNRS-LAAS, University of Seville, Seoul National University)
+- [2013] **Building Tensile Structures with Flying Machines** · *IROS* [paper](https://ieeexplore.ieee.org/document/6696853) [pdf](https://www.researchgate.net/publication/261353259_Building_tensile_structures_with_flying_machines) (ETH Zurich)
+
+## <a id="contact"></a>🔧 Contact Inspection, Tool Use & Force Interaction
+
+- [2025] **Predictive Admittance Control for Aerial Physical Interaction** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/11155162) [pdf](https://ayhamalharbat.github.io/publication/2025-4-ral/2025-4-RAL.pdf) (University of Twente)
+- [2025] **Pointillism Wall Painting Drone Using Bouncing Frequency Control** · *IEEE RA-L* [paper](https://ieeexplore.ieee.org/document/9830012) [pdf](https://hal.science/hal-05096557v1/file/STRAD_Format_IEEE_RA_L_Final_Version.pdf) (University Grenoble Alpes, GIPSA-lab)
+- [2023] ⭐ **A Perching and Tilting Aerial Robot for Precise and Versatile Power Tool Work on Vertical Walls** · *IROS* [paper](https://arxiv.org/abs/2310.10548) [pdf](https://arxiv.org/pdf/2310.10548) (ETH Zurich) — *150 N concrete drilling*
+- [2023] **Learning to Open Doors with an Aerial Manipulator** · *IROS* [paper](https://arxiv.org/abs/2307.15581) [pdf](https://arxiv.org/pdf/2307.15581) (ETH Zurich)
+- [2022] ⭐ **Automated Aerial Screwing with a Fully Actuated Aerial Manipulator** · *IROS* [paper](https://ieeexplore.ieee.org/document/9981979) [pdf](https://fis.tu-dresden.de/portal/files/18179291/IROS22_submittedVersion_prePrint.pdf) (TU Dresden)
+- [2021] ⭐ **Active Interaction Force Control for Contact-Based Inspection with a Fully Actuated Aerial Vehicle** · *IEEE T-RO* [paper](https://ieeexplore.ieee.org/document/9295362) [pdf](https://arxiv.org/pdf/2003.09516v3) (ETH Zurich)
+- [2020] **Aerial Manipulation Using Hybrid Force and Position NMPC Applied to Multirotor UAVs** · *RSS* [paper](https://www.roboticsproceedings.org/rss16/p046.pdf) (Imperial College London)
+- [2020] **Aerial Manipulator with Rolling Base for Inspection of Pipe Arrays** · *IEEE Access* [paper](https://ieeexplore.ieee.org/document/9023885) [pdf](https://aerial-core.eu/wp-content/uploads/2021/01/Aerial-Manipulator-with-Rolling-Base-for-Inspection-of-Pipe-Arrays.pdf) (University of Seville)
+- [2019] **Novel Aerial Manipulator for Accurate and Robust Industrial NDT Contact Inspection (AeroX)** · *Sensors* [paper](https://www.mdpi.com/1424-8220/19/6/1305) [pdf](https://idus.us.es/items/2f17021a-e2c3-4230-a5f1-74d1601d4351) (University of Seville)
+- [2019] **Robotic System for Inspection by Contact of Bridge Beams Using UAVs** · *Sensors* [paper](https://www.mdpi.com/1424-8220/19/2/305) [pdf](https://idus.us.es/items/ec99ccc4-c208-4771-88b6-d655396aa4c8) (University of Seville)
+- [2018] **PaintCopter: An Autonomous UAV for Spray Painting on 3D Surfaces** · *IEEE RA-L + IROS* [paper](https://ieeexplore.ieee.org/document/8432222) [pdf](http://disneyresearch.s3.amazonaws.com/wp-content/uploads/20181001120656/PaintCopter-An-Autonomous-UAV-for-Spray-Painting-on-3D-Surfaces-Paper.pdf) (Disney Research Zurich, ETH Zurich)
+- [2014] ⭐ **Towards Valve Turning Using a Dual-Arm Aerial Manipulator** · *IROS* [paper](https://www.semanticscholar.org/paper/8f0aeb1a4216df9fa9a8def78c106c432c837bb1) (Worcester Polytechnic Institute, University of Zagreb)
+
+## <a id="learning"></a>🧠 Learning-Based Methods, Simulators & Benchmarks
+
+- [2026] ⭐ **AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning** · *arXiv* [paper](https://arxiv.org/abs/2609.00641) [project](https://ambench.github.io) (The Chinese University of Hong Kong, CMU) — *12 tasks, 3 embodiments; single-UAM only → multi-UAM is the open gap*
+- [2026] **AIR-VLA: Vision-Language-Action Systems for Aerial Manipulation** · *arXiv* [paper](https://arxiv.org/abs/2601.21602) [code](https://github.com/SpencerSon2001/AIR-VLA) (Institute of Automation, Chinese Academy of Sciences)
+- [2026] **Global End-Effector Pose Control of an Underactuated Aerial Manipulator via Reinforcement Learning** · *ICRA* [paper](https://arxiv.org/abs/2512.21085) [pdf](https://arxiv.org/pdf/2512.21085) (TU Delft)
+- [2026] **Whole-Body Aerial Grasping and Lifting via Partial Visual Observations** · *arXiv* [paper](https://arxiv.org/abs/2610.00404) [pdf](https://arxiv.org/pdf/2610.00404) (Nanyang Technological University)
+- [2025] ⭐ **Flying Hand: End-Effector-Centric Framework for Versatile Aerial Manipulation** · *RSS* [paper](https://www.roboticsproceedings.org/rss21/p130.pdf) [pdf](https://arxiv.org/abs/2504.10334) (CMU)
+- [2025] ⭐ **Decentralized Aerial Manipulation of a Cable-Suspended Load Using Multi-Agent Reinforcement Learning** · *arXiv* [paper](https://arxiv.org/abs/2508.01522) [pdf](https://arxiv.org/pdf/2508.01522) (TU Delft, UC Berkeley) — *first real-world decentralized MARL multi-lift*
+- [2025] **UMI-on-Air: Embodiment-Aware Guidance for Flying Manipulators** · *arXiv* [paper](https://arxiv.org/abs/2510.02614) [code](https://github.com/LeCAR-Lab/umi-on-air_checkpoints) (Shanghai Jiao Tong University)
+- [2025] **Learning Vision-Based Agile Flight via Differentiable Physics** · *Nature Machine Intelligence* [paper](https://www.nature.com/articles/s42256-025-01048-0) [pdf](https://arxiv.org/pdf/2407.10648) (Shanghai Jiao Tong University) — *20 m/s swarm flight through forests*
+- [2025] **CognitiveDrone: A VLA Model and Evaluation Benchmark for Real-Time Cognitive Task Solving in UAVs** · *IROS* [paper](https://arxiv.org/abs/2503.01378) [pdf](https://arxiv.org/pdf/2503.01378) (Skoltech)
+- [2024] **Osprey: An Open-Source Soft Robotic Platform for Autonomous Aerial Manipulation in the Wild** · *CoRL* [paper](https://arxiv.org/abs/2409.07662) [pdf](https://arxiv.org/pdf/2409.07662) [code](https://github.com/srl-ethz/osprey) (ETH Zurich)
+- [2024] ⭐ **Aerial Gym: Isaac Gym Simulator for Aerial Robots** · *IEEE RA-L* [paper](https://arxiv.org/abs/2305.16510) [pdf](https://arxiv.org/pdf/2305.16510) [code](https://github.com/ntnu-arl/aerial_gym_simulator) (NTNU)
+- [2025] **Aerial Gym Simulator: A Framework for Highly Parallelized Simulation of Aerial Robots (multi-linked embodiments)** · *arXiv* [paper](https://arxiv.org/abs/2503.01471) [pdf](https://arxiv.org/pdf/2503.01471) [code](https://github.com/ntnu-arl/aerial_gym_simulator) (NTNU) — *adds drone+arm multi-linked bodies*
+- [2023] ⭐ **Champion-Level Drone Racing Using Deep Reinforcement Learning (Swift)** · *Nature* [paper](https://www.nature.com/articles/s41586-023-06419-9) (University of Zurich)
+- [2023] **A Deep Multi-Agent Reinforcement Learning Framework for Autonomous Aerial Navigation to Grasping Points on Loads** · *Robotics and Autonomous Systems* [paper](https://www.sciencedirect.com/science/article/pii/S0921889023001288) [pdf](https://eprints.whiterose.ac.uk/id/eprint/232609/1/1-s2.0-S0921889023001288-main.pdf) (Coventry University)
+- [2020] **Flightmare: A Flexible Quadrotor Simulator** · *CoRL* [paper](https://arxiv.org/abs/2009.00563) [pdf](https://arxiv.org/pdf/2009.00563) [code](https://github.com/uzh-rpg/flightmare) (University of Zurich)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Suggested format:
+
+```
+- [Year] **Paper Title** · *Venue* [paper](link) [pdf](open-access-link) [code](repo) (Affiliation)
+```
+
+⭐ = must-read. Papers without an open-access copy link to the publisher page only.
+
+## 📄 License
+
+[MIT](https://opensource.org/licenses/MIT)
